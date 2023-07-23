@@ -4101,7 +4101,7 @@ declare namespace ymaps {
         get<T extends OriginalEvent, K extends keyof T = keyof T>(name: K): T[K];
 
         get(name: 'type'): string;
-        get(name: 'objectId'): string | undefined;
+        get(name: 'objectId'): number | undefined;
         get(name: 'newZoom' | 'oldZoom'): number | undefined;
 
         get(name: string): any;
