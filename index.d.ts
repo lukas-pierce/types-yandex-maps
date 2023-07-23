@@ -4458,7 +4458,7 @@ declare namespace ymaps {
 
     // https://yandex.com/dev/jsapi-v2-1/doc/ru/v2-1/ref/reference/overlay.Placemark
     namespace overlay {
-        class Placemark {
+        class Placemark implements IOverlay {
             getIconElement(): HTMLElement
         }
     }
