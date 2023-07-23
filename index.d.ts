@@ -3137,6 +3137,7 @@ declare namespace ymaps {
     }
 
     interface IClusterPlacemarkOptions {
+        balloonLayout?: IClassConstructor<ILayout> | string | undefined;
         balloonContentLayout?: IClassConstructor<ILayout> | ClusterLayoutKey |  undefined;
         balloonContentLayoutHeight?: number | undefined;
         balloonContentLayoutWidth?: number | undefined;
