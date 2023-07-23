@@ -4900,6 +4900,10 @@ declare namespace ymaps {
             setPosition(position: number[]): Promise<map.Hint>;
         }
 
+        class OverlayCollection {
+            getById(id: number): object | null;
+        }
+
         class ClusterCollection implements ICustomizable, IEventEmitter {
             balloon: Balloon;
 
@@ -4944,10 +4948,6 @@ declare namespace ymaps {
             remove(object: object): this;
 
             setObjectOptions(objectId: string, options: object): ObjectCollection;
-        }
-
-        class OverlayCollection {
-            getById(id: number): object | null;
         }
     }
 
