@@ -4924,7 +4924,7 @@ declare namespace ymaps {
 
             each(callback: (object: object) => void, context?: object): void;
 
-            getById(id: string | null | undefined): object | null;
+            getById(id: number | null | undefined): object | null;
 
             getIterator(): IIterator;
 
