@@ -3,6 +3,7 @@
 // Definitions by: Delagen <https://github.com/Delagen>
 //                 gastwork13 <https://github.com/gastwork13>
 //                 kaskar2008 <https://github.com/kaskar2008>
+//                 Lukas Pierce <https://github.com/lukas-pierce>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 
