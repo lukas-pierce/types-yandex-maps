@@ -4842,7 +4842,7 @@ declare namespace ymaps {
     }
 
     namespace objectManager {
-        class Balloon implements Omit<IBalloonManager<map.Balloon>, 'open'> {
+        class Balloon implements Omit<IBalloonManager<map.Balloon>, 'isOpen' | 'open'> {
             events: IEventManager;
 
             autoPan(): Promise<ymaps.Balloon>;
@@ -4861,7 +4861,7 @@ declare namespace ymaps {
 
             getPosition(): number[] | null;
 
-            isOpen(): boolean;
+            isOpen(id: number): boolean;
 
             open(objectId: object | string, anchorPixelPosition?: boolean): Promise<ymaps.Balloon>;
 
