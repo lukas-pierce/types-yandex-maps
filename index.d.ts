@@ -4917,10 +4917,16 @@ declare namespace ymaps {
             setPosition(position: number[]): Promise<map.Hint>;
         }
 
+        class OverlayCollection {
+            getById(id: number): object | null;
+        }
+
         class ObjectCollection implements ICollection, ICustomizable {
             options: option.Manager;
 
             events: IEventManager;
+
+            overlays: objectManager.OverlayCollection
 
             add(object: object): this;
 
