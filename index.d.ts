@@ -3162,6 +3162,7 @@ declare namespace ymaps {
         openEmptyHint?: boolean | undefined;
         openHintOnHover?: boolean | undefined;
         zIndexHover?: number | undefined;
+        balloonOffset?: number[] | undefined;
     }
 
     interface IClusterPlacemarkOptionsWithClusterPrefix {
