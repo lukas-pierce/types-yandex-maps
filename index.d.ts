@@ -4872,32 +4872,6 @@ declare namespace ymaps {
             setPosition(position: number[]): Promise<ymaps.Balloon>;
         }
 
-        class ClusterCollection implements ICustomizable, IEventEmitter {
-            balloon: Balloon;
-
-            events: IEventManager;
-
-            hint: Hint;
-
-            options: option.Manager;
-
-            state: data.Manager;
-
-            overlays: objectManager.OverlayCollection
-
-            getAll(): object[];
-
-            getById(id: string | null | undefined): Cluster | null;
-
-            getIterator(): IIterator;
-
-            getLength(): number;
-
-            getObjectManager(): ObjectManager;
-
-            setClusterOptions(objectId: string, options: object): ObjectCollection;
-        }
-
         class Hint implements Omit<IHintManager<map.Hint>, 'open'> {
             events: IEventManager;
 
@@ -4924,6 +4898,32 @@ declare namespace ymaps {
             setOptions(options: object): Promise<map.Hint>;
 
             setPosition(position: number[]): Promise<map.Hint>;
+        }
+
+        class ClusterCollection implements ICustomizable, IEventEmitter {
+            balloon: Balloon;
+
+            events: IEventManager;
+
+            hint: Hint;
+
+            options: option.Manager;
+
+            state: data.Manager;
+
+            overlays: objectManager.OverlayCollection
+
+            getAll(): object[];
+
+            getById(id: string | null | undefined): Cluster | null;
+
+            getIterator(): IIterator;
+
+            getLength(): number;
+
+            getObjectManager(): ObjectManager;
+
+            setClusterOptions(objectId: string, options: object): ObjectCollection;
         }
 
         class ObjectCollection implements ICollection, ICustomizable {
