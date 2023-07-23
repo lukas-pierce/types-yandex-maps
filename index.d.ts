@@ -4456,6 +4456,13 @@ declare namespace ymaps {
         setMap(map: Map | null): void;
     }
 
+    // https://yandex.com/dev/jsapi-v2-1/doc/ru/v2-1/ref/reference/overlay.Placemark
+    namespace overlay {
+        class Placemark {
+            getIconElement(): HTMLElement
+        }
+    }
+
     interface IPane extends IEventEmitter {
         destroy(): void;
 
