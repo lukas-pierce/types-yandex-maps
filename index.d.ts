@@ -4915,7 +4915,7 @@ declare namespace ymaps {
 
             state: data.Manager;
 
-            overlays: objectManager.OverlayCollection
+            overlays: OverlayCollection;
 
             getAll(): object[];
 
@@ -4931,11 +4931,13 @@ declare namespace ymaps {
         }
 
         class ObjectCollection implements ICollection, ICustomizable {
+            balloon: Balloon;
+
             options: option.Manager;
 
             events: IEventManager;
 
-            overlays: objectManager.OverlayCollection
+            overlays: OverlayCollection;
 
             add(object: object): this;
 
