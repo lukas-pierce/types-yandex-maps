@@ -4876,6 +4876,8 @@ declare namespace ymaps {
 
             state: data.Manager;
 
+            overlays: objectManager.OverlayCollection
+
             getAll(): object[];
 
             getById(id: string | null | undefined): Cluster | null;
@@ -4917,10 +4919,6 @@ declare namespace ymaps {
             setPosition(position: number[]): Promise<map.Hint>;
         }
 
-        class OverlayCollection {
-            getById(id: number): object | null;
-        }
-
         class ObjectCollection implements ICollection, ICustomizable {
             options: option.Manager;
 
@@ -4939,6 +4937,10 @@ declare namespace ymaps {
             remove(object: object): this;
 
             setObjectOptions(objectId: string, options: object): ObjectCollection;
+        }
+
+        class OverlayCollection {
+            getById(id: number): object | null;
         }
     }
 
