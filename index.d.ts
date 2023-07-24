@@ -4943,13 +4943,21 @@ declare namespace ymaps {
 
             each(callback: (object: object) => void, context?: object): void;
 
+            getAll(): object[];
+
             getById(id: number | null | undefined): object | null;
+
+            getLength(): number;
+
+            getObjectManager(): ObjectManager;
 
             getIterator(): IIterator;
 
             remove(object: object): this;
 
-            setObjectOptions(objectId: string, options: object): ObjectCollection;
+            removeAll(): this;
+
+            setObjectOptions(objectId: string, options: object): this;
         }
     }
 
