@@ -1,5 +1,5 @@
 # Installation
-> `npm install --save @types/yandex-maps`
+> `npm install @types/yandex-maps --save-dev`
 
 my fork install
 
