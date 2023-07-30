@@ -1,6 +1,10 @@
 # Installation
 > `npm install --save @types/yandex-maps`
 
+my fork install
+
+> `npm install https://github.com/lukas-pierce/types-yandex-maps --save-dev`
+
 # Summary
 This package contains type definitions for yandex-maps (https://github.com/Delagen/typings-yandex-maps).
 
