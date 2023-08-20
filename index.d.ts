@@ -4861,7 +4861,7 @@ declare namespace ymaps {
 
             getPosition(): number[] | null;
 
-            isOpen(id: number): boolean;
+            isOpen(id: number | string): boolean;
 
             open(objectId: object | string, anchorPixelPosition?: boolean): Promise<ymaps.Balloon>;
 
