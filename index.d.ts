@@ -4945,7 +4945,7 @@ declare namespace ymaps {
 
             getAll(): object[];
 
-            getById(id: number | null | undefined): object | null;
+            getById(id: number | string | null | undefined): object | null;
 
             getLength(): number;
 
