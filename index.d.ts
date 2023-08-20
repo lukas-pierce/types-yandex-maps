@@ -4901,7 +4901,7 @@ declare namespace ymaps {
         }
 
         class OverlayCollection {
-            getById(id: number): object | null;
+            getById(id: number | string): object | null;
         }
 
         class ClusterCollection implements ICustomizable, IEventEmitter {
