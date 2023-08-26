@@ -3679,6 +3679,14 @@ declare namespace ymaps {
         constructor (geometry: number[][], properties?: IRectangleProperties, options?: IRectangleOptions);
     }
 
+    interface IRectangleProperties {
+        hintContent?: string | undefined;
+        balloonContent?: string | undefined;
+        balloonContentHeader?: string | undefined;
+        balloonContentBody?: string | undefined;
+        balloonContentFooter?: string | undefined;
+    }
+
     class Popup<T> implements IPopup<T> {
         constructor(map: Map, options?: IPopupOptions);
 
