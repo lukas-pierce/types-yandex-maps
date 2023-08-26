@@ -3675,6 +3675,10 @@ declare namespace ymaps {
         zIndexHover?: number | undefined;
     }
 
+    class Rectangle extends GeoObject {
+        constructor (geometry: number[][], properties?: IRectangleProperties, options?: IRectangleOptions);
+    }
+
     class Popup<T> implements IPopup<T> {
         constructor(map: Map, options?: IPopupOptions);
 
