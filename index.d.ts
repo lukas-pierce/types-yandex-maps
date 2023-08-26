@@ -3681,11 +3681,11 @@ declare namespace ymaps {
     }
 
     interface IRectangleProperties {
-        hintContent?: string | undefined;
-        balloonContent?: string | undefined;
-        balloonContentHeader?: string | undefined;
-        balloonContentBody?: string | undefined;
-        balloonContentFooter?: string | undefined;
+        hintContent?: string;
+        balloonContent?: string;
+        balloonContentHeader?: string;
+        balloonContentBody?: string;
+        balloonContentFooter?: string;
     }
 
     interface IRectangleOptions {
