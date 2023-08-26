@@ -3675,6 +3675,7 @@ declare namespace ymaps {
         zIndexHover?: number | undefined;
     }
 
+    /** @see https://yandex.ru/dev/jsapi-v2-1/doc/ru/v2-1/ref/reference/Rectangle */
     class Rectangle extends GeoObject {
         constructor (geometry: number[][], properties?: IRectangleProperties, options?: IRectangleOptions);
     }
