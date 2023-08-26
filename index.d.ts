@@ -3687,6 +3687,39 @@ declare namespace ymaps {
         balloonContentFooter?: string | undefined;
     }
 
+    interface IRectangleOptions {
+        cursor?: 'pointer';
+        draggable?: boolean;
+        fill?: boolean;
+        fillColor?: string;
+        fillImageHref?: string;
+        fillMethod?: 'stretch' | 'tile';
+        fillOpacity?: number;
+        hasBalloon?: boolean;
+        hasHint?: boolean;
+        interactiveZIndex?: boolean;
+        interactivityModel?: string;
+        opacity?: number;
+        openBalloonOnClick?: boolean;
+        openEmptyBalloon?: boolean;
+        openEmptyHint?: boolean;
+        openHintOnHover?: boolean;
+        outline?: boolean;
+        pane?: string;
+        rectangleOverlay?: string | Function;
+        strokeColor?: string | string[];
+        strokeOpacity?: number;
+        strokeStyle?: string | object | string[] | object[];
+        strokeWidth?: number;
+        syncOverlayInit?: boolean;
+        useMapMarginInDragging?: true;
+        visible?: boolean;
+        zIndex?: number;
+        zIndexActive?: number;
+        zIndexDrag?: number;
+        zIndexHover?: number;
+    }
+
     class Popup<T> implements IPopup<T> {
         constructor(map: Map, options?: IPopupOptions);
 
