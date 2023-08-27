@@ -4506,6 +4506,8 @@ declare namespace ymaps {
     namespace overlay {
         class Placemark implements IOverlay {
             getIconElement(): HTMLElement
+
+            getShape(): IShape | null;
         }
     }
 
