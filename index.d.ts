@@ -3524,7 +3524,7 @@ declare namespace ymaps {
 
     interface IMapBoundsOptions extends IMapPositionOptions {
         preciseZoom?: boolean | undefined;
-        zoomMargin?: number[][] | number[] | undefined;
+        zoomMargin?: number | number[] | undefined;
     }
 
     interface IMapPanOptions extends IMapPositionOptions {
